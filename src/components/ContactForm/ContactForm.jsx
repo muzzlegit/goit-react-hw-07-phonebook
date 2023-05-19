@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+//SLICES
 import { useAddContactMutation } from 'redux/contactsSlice';
 //ICONS
 import { BsPersonPlus } from 'react-icons/bs';
