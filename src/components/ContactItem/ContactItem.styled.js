@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import theme from 'theme';
 
 export const Item = styled.li(
   {
@@ -20,6 +19,6 @@ export const Button = styled.button(
     },
   },
   props => ({
-    color: props.color ? theme.colors.pGray : theme.colors.red,
+    color: props.color,
   })
 );

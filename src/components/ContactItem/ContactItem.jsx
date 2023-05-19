@@ -4,6 +4,7 @@ import { useDeleteContactMutation } from 'redux/contactsSlice';
 //ICONS
 import { AiOutlineScissor } from 'react-icons/ai';
 //STYLE
+import theme from 'theme';
 import { Item, Button } from './ContactItem.styled';
 
 export default function ContactItem({ contact, index }) {
@@ -21,7 +22,7 @@ export default function ContactItem({ contact, index }) {
           deleteContact(id);
         }}
         disabled={isLoading}
-        color={isLoading}
+        color={isLoading ? theme.colors.pGray : theme.colors.red}
       >
         <AiOutlineScissor size="24px" />
       </Button>
